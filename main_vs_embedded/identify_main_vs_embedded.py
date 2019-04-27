@@ -1,16 +1,17 @@
 #=======================================================#
 #       Install lynx before running                     #
 #=======================================================#
-
-from subprocess import Popen, PIPE, STDOUT 
+from subprocess import Popen, PIPE, STDOUT
+import sys 
 import os
 
 
 #============================#
 #   Website                  #
 #============================#
-domain = 'kamdhenusweet'
-website = 'http://kamdhenusweet.in'
+domain = 'localhost'
+website = 'http://localhost'
+length = len(website)
 main=set()
 main_all=set()
 embedded = {}
@@ -118,13 +119,24 @@ if __name__ == '__main__':
      print("         ALL MAIN REQUESTS                                  ")
      print("============================================================")
      for element in main:
-         print(element)
+         if element ==  website:
+             print("/")
+         else:
+             print(element[length:])
 
      print("============================================================")
      print("         ALL EMBEDDED REQUESTS  FOR THE MAIN REQUESTS       ")
      print("============================================================")
      for k,v in embedded.iteritems():
-         print(k,v)
+         sys.stdout.write("\n")
+         if k ==  website:
+             sys.stdout.write("/")
+         else:
+             sys.stdout.write(k[length:])
+         sys.stdout.write(" ")
+         for val in v:
+             sys.stdout.write(val[length:])
+             sys.stdout.write(" ")
          
 
              
