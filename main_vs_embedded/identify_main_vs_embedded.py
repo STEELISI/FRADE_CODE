@@ -11,8 +11,13 @@ import os
 #============================#
 domain = 'localhost'
 website = 'http://localhost'
+main_req_file = 'main.txt'
+embedded_req_file = 'embedded.txt'
+approved_object_list_file = 'aol.txt'
+
 length = len(website)
 main=set()
+embedded_set=set()
 main_all=set()
 embedded = {}
 
@@ -116,27 +121,43 @@ if __name__ == '__main__':
      #    print(element)
 
      print("============================================================")
-     print("         ALL MAIN REQUESTS                                  ")
+     print("         WRITING ALL MAIN REQUESTS                          ")
      print("============================================================")
+     file = open(main_req_file,'w') 
      for element in main:
          if element ==  website:
-             print("/")
+             file.write("\n/")
          else:
-             print(element[length:])
+             file.write("\n" + element[length:])
+     file.close()
 
+     file = open(approved_object_list_file,'w')
      print("============================================================")
-     print("         ALL EMBEDDED REQUESTS  FOR THE MAIN REQUESTS       ")
+     print(" WRITING ALL EMBEDDED REQUESTS  FOR THE MAIN REQUESTS       ")
      print("============================================================")
      for k,v in embedded.iteritems():
-         sys.stdout.write("\n")
+         str_aol = "\n"
          if k ==  website:
-             sys.stdout.write("/")
+             str_aol = str_aol + "/"
          else:
-             sys.stdout.write(k[length:])
-         sys.stdout.write(" ")
+             str_aol = str_aol + k[length:]
          for val in v:
-             sys.stdout.write(val[length:])
-             sys.stdout.write(" ")
+             str_aol = str_aol + " "
+             str_aol = str_aol + val[length:]
+             embedded_set.add(val[length:])
+         file.write(str_aol)
+     file.close()
+
+
+     print("============================================================")
+     print("         WRITING ALL EMBEDDED REQUESTS                      ")
+     print("============================================================")
+     file = open(embedded_req_file,'w')
+     for val in embedded_set:
+         file.write("\n" + val)
+     file.close()
+
+
          
 
              
