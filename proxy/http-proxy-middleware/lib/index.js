@@ -16,6 +16,7 @@ function HttpProxyMiddleware (context, opts) {
   var wsInitialized = false
   var config = configFactory.createConfig(context, opts)
   var proxyOptions = config.options
+  var orig
 
   // create proxy
   require('http').globalAgent.maxSockets = Infinity
@@ -40,9 +41,7 @@ function HttpProxyMiddleware (context, opts) {
     if (shouldProxy(config.context, req)) {
       var activeProxyOptions = prepareProxyRequest(req)
       proxy.web(req, res, activeProxyOptions)
-      /*var buf = res.toString('utf-8');
-       buf = buf.replace(/\/gallery\//g,"/gallery1/");
-      res.write(buf);*/
+      req.url = orig
 
     } else {
       next()
@@ -124,9 +123,11 @@ function recordStartTime () {
   function prepareProxyRequest (req) {
     // https://github.com/chimurai/http-proxy-middleware/issues/17
     // https://github.com/chimurai/http-proxy-middleware/issues/94
+    orig = req.url
     req.url = (req.originalUrl || req.url)
 
     // store uri before it gets rewritten for logging
+    req.url = req.url.replace(/\/\d\d\d\d\d\d\d\//g,"/gallery/");
     var originalPath = req.url
     if (proxyOptions.logLevel === 'debug') {
       //var arrow = getArrow(originalPath, req.url, proxyOptions.target, newProxyOptions.target)
@@ -135,6 +136,7 @@ function recordStartTime () {
       recordStartTime.call(req)
       //logger.debug('[HPM] %s %s %s %s', req.method, originalPath, arrow, newProxyOptions.target)
       logger.debug('%s %s %s %s', req._remoteAddress.split(":").pop(), req._startTime.getTime(), req.method, originalPath)
+      //req.url = req.url.replace(/\/\d\d\d\d\d\d\d\//g,"/gallery/");
     }
 
 
