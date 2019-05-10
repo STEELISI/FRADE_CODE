@@ -11,6 +11,18 @@ var app = express()
 var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), {flags: 'a'})
 var proxy = require('../../index') // require('http-proxy-middleware');
 
+var fs = require("fs");
+var stream;
+stream = fs.createWriteStream("/tmp/blacklistpipe");
+
+function ip2int(ip) {
+    return ip.split('.').reduce(function(ipInt, octet) { return (ipInt<<8) + parseInt(octet, 10)}, 0) >>> 0;
+}
+function rev(string) {
+     var str = string.split('.');
+     var reversed =  str[3] + "." + str[2] + "." + str[1] + "." + str[0]
+     return reversed
+}
 
 
 //var http = require('http');
@@ -23,7 +35,7 @@ var jsonPlaceholderProxy = proxy({
   changeOrigin: true, // for vhosted sites, changes host header to match to target's host
   logLevel: 'debug',
   changeOrigin: true,
-  selfHandleResponse: true/*,
+  selfHandleResponse: true,
 
 onProxyRes :function(proxyRes, req, res){
       var _write = res.write;
@@ -32,7 +44,6 @@ onProxyRes :function(proxyRes, req, res){
       var body;
       var random = Math.floor(Math.random() * (9999999 - 1000000  + 1)) + 1000000;
       var convert = "/" + random.toString() + "/";
-      
       if(map.has(req.ip))
       {
          val = map.get(req.ip)
@@ -44,11 +55,22 @@ onProxyRes :function(proxyRes, req, res){
          else if(req.url.indexOf("/gallery/") >= 0)
          {
             console.log("Blacklisting Module Will Be Called Here ");
+            var dec = ip2int(rev(req.ip))
+            console.log(dec)
+            //console.log(blacklist)
+            //var blacklist = "\n" + rev(dec.toString())
+            stream.write(  dec.toString() + "\n")
+            //fs.appendFileSync('/tmp/blacklistpipe', dec.toString());
             return;
          }
          else if(req.url.match(/\/[0-9][0-9][0-9][0-9][0-9][0-9][0-9]\/+/g))
          {  
             console.log("Call Blacklisting Module");
+            var dec = ip2int(req.ip)
+            var blacklist =  rev(dec.toString())
+            //console.log(dec)
+            //console.log(blacklist)
+            stream.write(  dec.toString() + "\n")
             return;
          }
 
@@ -70,7 +92,7 @@ onProxyRes :function(proxyRes, req, res){
           _write.call(res,body.toString('utf-8'));
         } catch (err) {}
       }
-    }*/
+    }
    
 });
 
