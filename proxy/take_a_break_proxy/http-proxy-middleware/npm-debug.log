@@ -1,0 +1,1102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/mnt/http-proxy-middleware',
+5 verbose install   [ 'http-proxy',
+5 verbose install     'is-glob',
+5 verbose install     'lodash',
+5 verbose install     'micromatch',
+5 verbose install     '@commitlint/cli',
+5 verbose install     '@commitlint/config-conventional',
+5 verbose install     'browser-sync',
+5 verbose install     'chai',
+5 verbose install     'connect',
+5 verbose install     'coveralls',
+5 verbose install     'express',
+5 verbose install     'husky',
+5 verbose install     'istanbul',
+5 verbose install     'istanbul-coveralls',
+5 verbose install     'mocha',
+5 verbose install     'mocha-lcov-reporter',
+5 verbose install     'opn',
+5 verbose install     'snazzy',
+5 verbose install     'standard',
+5 verbose install     'ws' ] ]
+6 info preinstall http-proxy-middleware@0.18.0
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'http-proxy@^1.16.2', null ]
+9 verbose cache add name=undefined spec="http-proxy@^1.16.2" args=["http-proxy@^1.16.2",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'http-proxy@^1.16.2',
+10 verbose parsed url   path: 'http-proxy@^1.16.2',
+10 verbose parsed url   href: 'http-proxy@^1.16.2' }
+11 verbose cache add name="http-proxy" spec="^1.16.2" args=["http-proxy","^1.16.2"]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: '^1.16.2',
+12 verbose parsed url   path: '^1.16.2',
+12 verbose parsed url   href: '^1.16.2' }
+13 verbose addNamed [ 'http-proxy', '^1.16.2' ]
+14 verbose addNamed [ null, '>=1.16.2-0 <2.0.0-0' ]
+15 verbose cache add [ 'is-glob@^4.0.0', null ]
+16 verbose cache add name=undefined spec="is-glob@^4.0.0" args=["is-glob@^4.0.0",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'is-glob@^4.0.0',
+17 verbose parsed url   path: 'is-glob@^4.0.0',
+17 verbose parsed url   href: 'is-glob@^4.0.0' }
+18 verbose cache add name="is-glob" spec="^4.0.0" args=["is-glob","^4.0.0"]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: '^4.0.0',
+19 verbose parsed url   path: '^4.0.0',
+19 verbose parsed url   href: '^4.0.0' }
+20 verbose addNamed [ 'is-glob', '^4.0.0' ]
+21 verbose addNamed [ null, '>=4.0.0-0 <5.0.0-0' ]
+22 silly lockFile 0d7323cc-http-proxy-1-16-2 http-proxy@^1.16.2
+23 verbose lock http-proxy@^1.16.2 /users/rajat19/.npm/0d7323cc-http-proxy-1-16-2.lock
+24 verbose cache add [ 'micromatch@^3.1.9', null ]
+25 verbose cache add name=undefined spec="micromatch@^3.1.9" args=["micromatch@^3.1.9",null]
+26 verbose parsed url { protocol: null,
+26 verbose parsed url   slashes: null,
+26 verbose parsed url   auth: null,
+26 verbose parsed url   host: null,
+26 verbose parsed url   port: null,
+26 verbose parsed url   hostname: null,
+26 verbose parsed url   hash: null,
+26 verbose parsed url   search: null,
+26 verbose parsed url   query: null,
+26 verbose parsed url   pathname: 'micromatch@^3.1.9',
+26 verbose parsed url   path: 'micromatch@^3.1.9',
+26 verbose parsed url   href: 'micromatch@^3.1.9' }
+27 verbose cache add name="micromatch" spec="^3.1.9" args=["micromatch","^3.1.9"]
+28 verbose parsed url { protocol: null,
+28 verbose parsed url   slashes: null,
+28 verbose parsed url   auth: null,
+28 verbose parsed url   host: null,
+28 verbose parsed url   port: null,
+28 verbose parsed url   hostname: null,
+28 verbose parsed url   hash: null,
+28 verbose parsed url   search: null,
+28 verbose parsed url   query: null,
+28 verbose parsed url   pathname: '^3.1.9',
+28 verbose parsed url   path: '^3.1.9',
+28 verbose parsed url   href: '^3.1.9' }
+29 verbose addNamed [ 'micromatch', '^3.1.9' ]
+30 verbose addNamed [ null, '>=3.1.9-0 <4.0.0-0' ]
+31 silly lockFile 58b72124-micromatch-3-1-9 micromatch@^3.1.9
+32 verbose lock micromatch@^3.1.9 /users/rajat19/.npm/58b72124-micromatch-3-1-9.lock
+33 verbose cache add [ 'lodash@^4.17.5', null ]
+34 verbose cache add name=undefined spec="lodash@^4.17.5" args=["lodash@^4.17.5",null]
+35 verbose parsed url { protocol: null,
+35 verbose parsed url   slashes: null,
+35 verbose parsed url   auth: null,
+35 verbose parsed url   host: null,
+35 verbose parsed url   port: null,
+35 verbose parsed url   hostname: null,
+35 verbose parsed url   hash: null,
+35 verbose parsed url   search: null,
+35 verbose parsed url   query: null,
+35 verbose parsed url   pathname: 'lodash@^4.17.5',
+35 verbose parsed url   path: 'lodash@^4.17.5',
+35 verbose parsed url   href: 'lodash@^4.17.5' }
+36 verbose cache add name="lodash" spec="^4.17.5" args=["lodash","^4.17.5"]
+37 verbose parsed url { protocol: null,
+37 verbose parsed url   slashes: null,
+37 verbose parsed url   auth: null,
+37 verbose parsed url   host: null,
+37 verbose parsed url   port: null,
+37 verbose parsed url   hostname: null,
+37 verbose parsed url   hash: null,
+37 verbose parsed url   search: null,
+37 verbose parsed url   query: null,
+37 verbose parsed url   pathname: '^4.17.5',
+37 verbose parsed url   path: '^4.17.5',
+37 verbose parsed url   href: '^4.17.5' }
+38 verbose addNamed [ 'lodash', '^4.17.5' ]
+39 verbose addNamed [ null, '>=4.17.5-0 <5.0.0-0' ]
+40 silly lockFile e0c0ec5b-lodash-4-17-5 lodash@^4.17.5
+41 verbose lock lodash@^4.17.5 /users/rajat19/.npm/e0c0ec5b-lodash-4-17-5.lock
+42 verbose cache add [ '@commitlint/cli@^6.1.3', null ]
+43 verbose cache add name=undefined spec="@commitlint/cli@^6.1.3" args=["@commitlint/cli@^6.1.3",null]
+44 verbose parsed url { protocol: null,
+44 verbose parsed url   slashes: null,
+44 verbose parsed url   auth: null,
+44 verbose parsed url   host: null,
+44 verbose parsed url   port: null,
+44 verbose parsed url   hostname: null,
+44 verbose parsed url   hash: null,
+44 verbose parsed url   search: null,
+44 verbose parsed url   query: null,
+44 verbose parsed url   pathname: '@commitlint/cli@^6.1.3',
+44 verbose parsed url   path: '@commitlint/cli@^6.1.3',
+44 verbose parsed url   href: '@commitlint/cli@^6.1.3' }
+45 verbose cache add name="" spec="commitlint/cli@^6.1.3" args=["","commitlint/cli@^6.1.3"]
+46 verbose parsed url { protocol: null,
+46 verbose parsed url   slashes: null,
+46 verbose parsed url   auth: null,
+46 verbose parsed url   host: null,
+46 verbose parsed url   port: null,
+46 verbose parsed url   hostname: null,
+46 verbose parsed url   hash: null,
+46 verbose parsed url   search: null,
+46 verbose parsed url   query: null,
+46 verbose parsed url   pathname: 'commitlint/cli@^6.1.3',
+46 verbose parsed url   path: 'commitlint/cli@^6.1.3',
+46 verbose parsed url   href: 'commitlint/cli@^6.1.3' }
+47 verbose cache add name="commitlint/cli" spec="^6.1.3" args=["commitlint/cli","^6.1.3"]
+48 verbose parsed url { protocol: null,
+48 verbose parsed url   slashes: null,
+48 verbose parsed url   auth: null,
+48 verbose parsed url   host: null,
+48 verbose parsed url   port: null,
+48 verbose parsed url   hostname: null,
+48 verbose parsed url   hash: null,
+48 verbose parsed url   search: null,
+48 verbose parsed url   query: null,
+48 verbose parsed url   pathname: '^6.1.3',
+48 verbose parsed url   path: '^6.1.3',
+48 verbose parsed url   href: '^6.1.3' }
+49 verbose addNamed [ 'commitlint/cli', '^6.1.3' ]
+50 verbose addNamed [ null, '>=6.1.3-0 <7.0.0-0' ]
+51 silly lockFile 98e3185d-commitlint-cli-6-1-3 commitlint/cli@^6.1.3
+52 verbose lock commitlint/cli@^6.1.3 /users/rajat19/.npm/98e3185d-commitlint-cli-6-1-3.lock
+53 verbose cache add [ '@commitlint/config-conventional@^6.1.3', null ]
+54 verbose cache add name=undefined spec="@commitlint/config-conventional@^6.1.3" args=["@commitlint/config-conventional@^6.1.3",null]
+55 verbose parsed url { protocol: null,
+55 verbose parsed url   slashes: null,
+55 verbose parsed url   auth: null,
+55 verbose parsed url   host: null,
+55 verbose parsed url   port: null,
+55 verbose parsed url   hostname: null,
+55 verbose parsed url   hash: null,
+55 verbose parsed url   search: null,
+55 verbose parsed url   query: null,
+55 verbose parsed url   pathname: '@commitlint/config-conventional@^6.1.3',
+55 verbose parsed url   path: '@commitlint/config-conventional@^6.1.3',
+55 verbose parsed url   href: '@commitlint/config-conventional@^6.1.3' }
+56 verbose cache add name="" spec="commitlint/config-conventional@^6.1.3" args=["","commitlint/config-conventional@^6.1.3"]
+57 verbose parsed url { protocol: null,
+57 verbose parsed url   slashes: null,
+57 verbose parsed url   auth: null,
+57 verbose parsed url   host: null,
+57 verbose parsed url   port: null,
+57 verbose parsed url   hostname: null,
+57 verbose parsed url   hash: null,
+57 verbose parsed url   search: null,
+57 verbose parsed url   query: null,
+57 verbose parsed url   pathname: 'commitlint/config-conventional@^6.1.3',
+57 verbose parsed url   path: 'commitlint/config-conventional@^6.1.3',
+57 verbose parsed url   href: 'commitlint/config-conventional@^6.1.3' }
+58 verbose cache add name="commitlint/config-conventional" spec="^6.1.3" args=["commitlint/config-conventional","^6.1.3"]
+59 verbose parsed url { protocol: null,
+59 verbose parsed url   slashes: null,
+59 verbose parsed url   auth: null,
+59 verbose parsed url   host: null,
+59 verbose parsed url   port: null,
+59 verbose parsed url   hostname: null,
+59 verbose parsed url   hash: null,
+59 verbose parsed url   search: null,
+59 verbose parsed url   query: null,
+59 verbose parsed url   pathname: '^6.1.3',
+59 verbose parsed url   path: '^6.1.3',
+59 verbose parsed url   href: '^6.1.3' }
+60 verbose addNamed [ 'commitlint/config-conventional', '^6.1.3' ]
+61 verbose addNamed [ null, '>=6.1.3-0 <7.0.0-0' ]
+62 silly lockFile 82dc7f14-itlint-config-conventional-6-1-3 commitlint/config-conventional@^6.1.3
+63 verbose lock commitlint/config-conventional@^6.1.3 /users/rajat19/.npm/82dc7f14-itlint-config-conventional-6-1-3.lock
+64 verbose cache add [ 'browser-sync@^2.23.6', null ]
+65 verbose cache add name=undefined spec="browser-sync@^2.23.6" args=["browser-sync@^2.23.6",null]
+66 verbose parsed url { protocol: null,
+66 verbose parsed url   slashes: null,
+66 verbose parsed url   auth: null,
+66 verbose parsed url   host: null,
+66 verbose parsed url   port: null,
+66 verbose parsed url   hostname: null,
+66 verbose parsed url   hash: null,
+66 verbose parsed url   search: null,
+66 verbose parsed url   query: null,
+66 verbose parsed url   pathname: 'browser-sync@^2.23.6',
+66 verbose parsed url   path: 'browser-sync@^2.23.6',
+66 verbose parsed url   href: 'browser-sync@^2.23.6' }
+67 verbose cache add name="browser-sync" spec="^2.23.6" args=["browser-sync","^2.23.6"]
+68 verbose parsed url { protocol: null,
+68 verbose parsed url   slashes: null,
+68 verbose parsed url   auth: null,
+68 verbose parsed url   host: null,
+68 verbose parsed url   port: null,
+68 verbose parsed url   hostname: null,
+68 verbose parsed url   hash: null,
+68 verbose parsed url   search: null,
+68 verbose parsed url   query: null,
+68 verbose parsed url   pathname: '^2.23.6',
+68 verbose parsed url   path: '^2.23.6',
+68 verbose parsed url   href: '^2.23.6' }
+69 verbose addNamed [ 'browser-sync', '^2.23.6' ]
+70 verbose addNamed [ null, '>=2.23.6-0 <3.0.0-0' ]
+71 silly lockFile 300903f2-browser-sync-2-23-6 browser-sync@^2.23.6
+72 verbose lock browser-sync@^2.23.6 /users/rajat19/.npm/300903f2-browser-sync-2-23-6.lock
+73 verbose cache add [ 'chai@^4.1.2', null ]
+74 verbose cache add name=undefined spec="chai@^4.1.2" args=["chai@^4.1.2",null]
+75 verbose parsed url { protocol: null,
+75 verbose parsed url   slashes: null,
+75 verbose parsed url   auth: null,
+75 verbose parsed url   host: null,
+75 verbose parsed url   port: null,
+75 verbose parsed url   hostname: null,
+75 verbose parsed url   hash: null,
+75 verbose parsed url   search: null,
+75 verbose parsed url   query: null,
+75 verbose parsed url   pathname: 'chai@^4.1.2',
+75 verbose parsed url   path: 'chai@^4.1.2',
+75 verbose parsed url   href: 'chai@^4.1.2' }
+76 verbose cache add name="chai" spec="^4.1.2" args=["chai","^4.1.2"]
+77 verbose parsed url { protocol: null,
+77 verbose parsed url   slashes: null,
+77 verbose parsed url   auth: null,
+77 verbose parsed url   host: null,
+77 verbose parsed url   port: null,
+77 verbose parsed url   hostname: null,
+77 verbose parsed url   hash: null,
+77 verbose parsed url   search: null,
+77 verbose parsed url   query: null,
+77 verbose parsed url   pathname: '^4.1.2',
+77 verbose parsed url   path: '^4.1.2',
+77 verbose parsed url   href: '^4.1.2' }
+78 verbose addNamed [ 'chai', '^4.1.2' ]
+79 verbose addNamed [ null, '>=4.1.2-0 <5.0.0-0' ]
+80 silly lockFile bcea83f6-chai-4-1-2 chai@^4.1.2
+81 verbose lock chai@^4.1.2 /users/rajat19/.npm/bcea83f6-chai-4-1-2.lock
+82 silly lockFile 7f8b70d6-is-glob-4-0-0 is-glob@^4.0.0
+83 verbose lock is-glob@^4.0.0 /users/rajat19/.npm/7f8b70d6-is-glob-4-0-0.lock
+84 verbose cache add [ 'connect@^3.6.6', null ]
+85 verbose cache add name=undefined spec="connect@^3.6.6" args=["connect@^3.6.6",null]
+86 verbose parsed url { protocol: null,
+86 verbose parsed url   slashes: null,
+86 verbose parsed url   auth: null,
+86 verbose parsed url   host: null,
+86 verbose parsed url   port: null,
+86 verbose parsed url   hostname: null,
+86 verbose parsed url   hash: null,
+86 verbose parsed url   search: null,
+86 verbose parsed url   query: null,
+86 verbose parsed url   pathname: 'connect@^3.6.6',
+86 verbose parsed url   path: 'connect@^3.6.6',
+86 verbose parsed url   href: 'connect@^3.6.6' }
+87 verbose cache add name="connect" spec="^3.6.6" args=["connect","^3.6.6"]
+88 verbose parsed url { protocol: null,
+88 verbose parsed url   slashes: null,
+88 verbose parsed url   auth: null,
+88 verbose parsed url   host: null,
+88 verbose parsed url   port: null,
+88 verbose parsed url   hostname: null,
+88 verbose parsed url   hash: null,
+88 verbose parsed url   search: null,
+88 verbose parsed url   query: null,
+88 verbose parsed url   pathname: '^3.6.6',
+88 verbose parsed url   path: '^3.6.6',
+88 verbose parsed url   href: '^3.6.6' }
+89 verbose addNamed [ 'connect', '^3.6.6' ]
+90 verbose addNamed [ null, '>=3.6.6-0 <4.0.0-0' ]
+91 silly lockFile 8195d320-connect-3-6-6 connect@^3.6.6
+92 verbose lock connect@^3.6.6 /users/rajat19/.npm/8195d320-connect-3-6-6.lock
+93 verbose cache add [ 'coveralls@^3.0.0', null ]
+94 verbose cache add name=undefined spec="coveralls@^3.0.0" args=["coveralls@^3.0.0",null]
+95 verbose parsed url { protocol: null,
+95 verbose parsed url   slashes: null,
+95 verbose parsed url   auth: null,
+95 verbose parsed url   host: null,
+95 verbose parsed url   port: null,
+95 verbose parsed url   hostname: null,
+95 verbose parsed url   hash: null,
+95 verbose parsed url   search: null,
+95 verbose parsed url   query: null,
+95 verbose parsed url   pathname: 'coveralls@^3.0.0',
+95 verbose parsed url   path: 'coveralls@^3.0.0',
+95 verbose parsed url   href: 'coveralls@^3.0.0' }
+96 verbose cache add name="coveralls" spec="^3.0.0" args=["coveralls","^3.0.0"]
+97 verbose parsed url { protocol: null,
+97 verbose parsed url   slashes: null,
+97 verbose parsed url   auth: null,
+97 verbose parsed url   host: null,
+97 verbose parsed url   port: null,
+97 verbose parsed url   hostname: null,
+97 verbose parsed url   hash: null,
+97 verbose parsed url   search: null,
+97 verbose parsed url   query: null,
+97 verbose parsed url   pathname: '^3.0.0',
+97 verbose parsed url   path: '^3.0.0',
+97 verbose parsed url   href: '^3.0.0' }
+98 verbose addNamed [ 'coveralls', '^3.0.0' ]
+99 verbose addNamed [ null, '>=3.0.0-0 <4.0.0-0' ]
+100 silly lockFile 9f575962-coveralls-3-0-0 coveralls@^3.0.0
+101 verbose lock coveralls@^3.0.0 /users/rajat19/.npm/9f575962-coveralls-3-0-0.lock
+102 verbose cache add [ 'express@^4.16.3', null ]
+103 verbose cache add name=undefined spec="express@^4.16.3" args=["express@^4.16.3",null]
+104 verbose parsed url { protocol: null,
+104 verbose parsed url   slashes: null,
+104 verbose parsed url   auth: null,
+104 verbose parsed url   host: null,
+104 verbose parsed url   port: null,
+104 verbose parsed url   hostname: null,
+104 verbose parsed url   hash: null,
+104 verbose parsed url   search: null,
+104 verbose parsed url   query: null,
+104 verbose parsed url   pathname: 'express@^4.16.3',
+104 verbose parsed url   path: 'express@^4.16.3',
+104 verbose parsed url   href: 'express@^4.16.3' }
+105 verbose cache add name="express" spec="^4.16.3" args=["express","^4.16.3"]
+106 verbose parsed url { protocol: null,
+106 verbose parsed url   slashes: null,
+106 verbose parsed url   auth: null,
+106 verbose parsed url   host: null,
+106 verbose parsed url   port: null,
+106 verbose parsed url   hostname: null,
+106 verbose parsed url   hash: null,
+106 verbose parsed url   search: null,
+106 verbose parsed url   query: null,
+106 verbose parsed url   pathname: '^4.16.3',
+106 verbose parsed url   path: '^4.16.3',
+106 verbose parsed url   href: '^4.16.3' }
+107 verbose addNamed [ 'express', '^4.16.3' ]
+108 verbose addNamed [ null, '>=4.16.3-0 <5.0.0-0' ]
+109 silly lockFile d9b3c286-express-4-16-3 express@^4.16.3
+110 verbose lock express@^4.16.3 /users/rajat19/.npm/d9b3c286-express-4-16-3.lock
+111 verbose cache add [ 'husky@^0.14.3', null ]
+112 verbose cache add name=undefined spec="husky@^0.14.3" args=["husky@^0.14.3",null]
+113 verbose parsed url { protocol: null,
+113 verbose parsed url   slashes: null,
+113 verbose parsed url   auth: null,
+113 verbose parsed url   host: null,
+113 verbose parsed url   port: null,
+113 verbose parsed url   hostname: null,
+113 verbose parsed url   hash: null,
+113 verbose parsed url   search: null,
+113 verbose parsed url   query: null,
+113 verbose parsed url   pathname: 'husky@^0.14.3',
+113 verbose parsed url   path: 'husky@^0.14.3',
+113 verbose parsed url   href: 'husky@^0.14.3' }
+114 verbose cache add name="husky" spec="^0.14.3" args=["husky","^0.14.3"]
+115 verbose parsed url { protocol: null,
+115 verbose parsed url   slashes: null,
+115 verbose parsed url   auth: null,
+115 verbose parsed url   host: null,
+115 verbose parsed url   port: null,
+115 verbose parsed url   hostname: null,
+115 verbose parsed url   hash: null,
+115 verbose parsed url   search: null,
+115 verbose parsed url   query: null,
+115 verbose parsed url   pathname: '^0.14.3',
+115 verbose parsed url   path: '^0.14.3',
+115 verbose parsed url   href: '^0.14.3' }
+116 verbose addNamed [ 'husky', '^0.14.3' ]
+117 verbose addNamed [ null, '>=0.14.3-0 <0.15.0-0' ]
+118 silly lockFile 61b80e4c-husky-0-14-3 husky@^0.14.3
+119 verbose lock husky@^0.14.3 /users/rajat19/.npm/61b80e4c-husky-0-14-3.lock
+120 verbose cache add [ 'istanbul@^0.4.5', null ]
+121 verbose cache add name=undefined spec="istanbul@^0.4.5" args=["istanbul@^0.4.5",null]
+122 verbose parsed url { protocol: null,
+122 verbose parsed url   slashes: null,
+122 verbose parsed url   auth: null,
+122 verbose parsed url   host: null,
+122 verbose parsed url   port: null,
+122 verbose parsed url   hostname: null,
+122 verbose parsed url   hash: null,
+122 verbose parsed url   search: null,
+122 verbose parsed url   query: null,
+122 verbose parsed url   pathname: 'istanbul@^0.4.5',
+122 verbose parsed url   path: 'istanbul@^0.4.5',
+122 verbose parsed url   href: 'istanbul@^0.4.5' }
+123 verbose cache add name="istanbul" spec="^0.4.5" args=["istanbul","^0.4.5"]
+124 verbose parsed url { protocol: null,
+124 verbose parsed url   slashes: null,
+124 verbose parsed url   auth: null,
+124 verbose parsed url   host: null,
+124 verbose parsed url   port: null,
+124 verbose parsed url   hostname: null,
+124 verbose parsed url   hash: null,
+124 verbose parsed url   search: null,
+124 verbose parsed url   query: null,
+124 verbose parsed url   pathname: '^0.4.5',
+124 verbose parsed url   path: '^0.4.5',
+124 verbose parsed url   href: '^0.4.5' }
+125 verbose addNamed [ 'istanbul', '^0.4.5' ]
+126 verbose addNamed [ null, '>=0.4.5-0 <0.5.0-0' ]
+127 silly lockFile 595b370d-istanbul-0-4-5 istanbul@^0.4.5
+128 verbose lock istanbul@^0.4.5 /users/rajat19/.npm/595b370d-istanbul-0-4-5.lock
+129 verbose cache add [ 'istanbul-coveralls@^1.0.3', null ]
+130 verbose cache add name=undefined spec="istanbul-coveralls@^1.0.3" args=["istanbul-coveralls@^1.0.3",null]
+131 verbose parsed url { protocol: null,
+131 verbose parsed url   slashes: null,
+131 verbose parsed url   auth: null,
+131 verbose parsed url   host: null,
+131 verbose parsed url   port: null,
+131 verbose parsed url   hostname: null,
+131 verbose parsed url   hash: null,
+131 verbose parsed url   search: null,
+131 verbose parsed url   query: null,
+131 verbose parsed url   pathname: 'istanbul-coveralls@^1.0.3',
+131 verbose parsed url   path: 'istanbul-coveralls@^1.0.3',
+131 verbose parsed url   href: 'istanbul-coveralls@^1.0.3' }
+132 verbose cache add name="istanbul-coveralls" spec="^1.0.3" args=["istanbul-coveralls","^1.0.3"]
+133 verbose parsed url { protocol: null,
+133 verbose parsed url   slashes: null,
+133 verbose parsed url   auth: null,
+133 verbose parsed url   host: null,
+133 verbose parsed url   port: null,
+133 verbose parsed url   hostname: null,
+133 verbose parsed url   hash: null,
+133 verbose parsed url   search: null,
+133 verbose parsed url   query: null,
+133 verbose parsed url   pathname: '^1.0.3',
+133 verbose parsed url   path: '^1.0.3',
+133 verbose parsed url   href: '^1.0.3' }
+134 verbose addNamed [ 'istanbul-coveralls', '^1.0.3' ]
+135 verbose addNamed [ null, '>=1.0.3-0 <2.0.0-0' ]
+136 silly lockFile 5677e56c-istanbul-coveralls-1-0-3 istanbul-coveralls@^1.0.3
+137 verbose lock istanbul-coveralls@^1.0.3 /users/rajat19/.npm/5677e56c-istanbul-coveralls-1-0-3.lock
+138 verbose cache add [ 'mocha@^5.0.4', null ]
+139 verbose cache add name=undefined spec="mocha@^5.0.4" args=["mocha@^5.0.4",null]
+140 verbose parsed url { protocol: null,
+140 verbose parsed url   slashes: null,
+140 verbose parsed url   auth: null,
+140 verbose parsed url   host: null,
+140 verbose parsed url   port: null,
+140 verbose parsed url   hostname: null,
+140 verbose parsed url   hash: null,
+140 verbose parsed url   search: null,
+140 verbose parsed url   query: null,
+140 verbose parsed url   pathname: 'mocha@^5.0.4',
+140 verbose parsed url   path: 'mocha@^5.0.4',
+140 verbose parsed url   href: 'mocha@^5.0.4' }
+141 verbose cache add name="mocha" spec="^5.0.4" args=["mocha","^5.0.4"]
+142 verbose parsed url { protocol: null,
+142 verbose parsed url   slashes: null,
+142 verbose parsed url   auth: null,
+142 verbose parsed url   host: null,
+142 verbose parsed url   port: null,
+142 verbose parsed url   hostname: null,
+142 verbose parsed url   hash: null,
+142 verbose parsed url   search: null,
+142 verbose parsed url   query: null,
+142 verbose parsed url   pathname: '^5.0.4',
+142 verbose parsed url   path: '^5.0.4',
+142 verbose parsed url   href: '^5.0.4' }
+143 verbose addNamed [ 'mocha', '^5.0.4' ]
+144 verbose addNamed [ null, '>=5.0.4-0 <6.0.0-0' ]
+145 silly lockFile 822ff526-mocha-5-0-4 mocha@^5.0.4
+146 verbose lock mocha@^5.0.4 /users/rajat19/.npm/822ff526-mocha-5-0-4.lock
+147 silly addNameRange { name: 'http-proxy',
+147 silly addNameRange   range: '>=1.16.2-0 <2.0.0-0',
+147 silly addNameRange   hasData: false }
+148 silly addNameRange { name: 'micromatch',
+148 silly addNameRange   range: '>=3.1.9-0 <4.0.0-0',
+148 silly addNameRange   hasData: false }
+149 silly addNameRange { name: 'lodash', range: '>=4.17.5-0 <5.0.0-0', hasData: false }
+150 silly addNameRange { name: 'commitlint/cli',
+150 silly addNameRange   range: '>=6.1.3-0 <7.0.0-0',
+150 silly addNameRange   hasData: false }
+151 silly addNameRange { name: 'commitlint/config-conventional',
+151 silly addNameRange   range: '>=6.1.3-0 <7.0.0-0',
+151 silly addNameRange   hasData: false }
+152 verbose cache add [ 'mocha-lcov-reporter@1.3.0', null ]
+153 verbose cache add name=undefined spec="mocha-lcov-reporter@1.3.0" args=["mocha-lcov-reporter@1.3.0",null]
+154 verbose parsed url { protocol: null,
+154 verbose parsed url   slashes: null,
+154 verbose parsed url   auth: null,
+154 verbose parsed url   host: null,
+154 verbose parsed url   port: null,
+154 verbose parsed url   hostname: null,
+154 verbose parsed url   hash: null,
+154 verbose parsed url   search: null,
+154 verbose parsed url   query: null,
+154 verbose parsed url   pathname: 'mocha-lcov-reporter@1.3.0',
+154 verbose parsed url   path: 'mocha-lcov-reporter@1.3.0',
+154 verbose parsed url   href: 'mocha-lcov-reporter@1.3.0' }
+155 verbose cache add name="mocha-lcov-reporter" spec="1.3.0" args=["mocha-lcov-reporter","1.3.0"]
+156 verbose parsed url { protocol: null,
+156 verbose parsed url   slashes: null,
+156 verbose parsed url   auth: null,
+156 verbose parsed url   host: null,
+156 verbose parsed url   port: null,
+156 verbose parsed url   hostname: null,
+156 verbose parsed url   hash: null,
+156 verbose parsed url   search: null,
+156 verbose parsed url   query: null,
+156 verbose parsed url   pathname: '1.3.0',
+156 verbose parsed url   path: '1.3.0',
+156 verbose parsed url   href: '1.3.0' }
+157 verbose addNamed [ 'mocha-lcov-reporter', '1.3.0' ]
+158 verbose addNamed [ '1.3.0', '1.3.0' ]
+159 silly lockFile 363b8fab-mocha-lcov-reporter-1-3-0 mocha-lcov-reporter@1.3.0
+160 verbose lock mocha-lcov-reporter@1.3.0 /users/rajat19/.npm/363b8fab-mocha-lcov-reporter-1-3-0.lock
+161 verbose cache add [ 'opn@^5.2.0', null ]
+162 verbose cache add name=undefined spec="opn@^5.2.0" args=["opn@^5.2.0",null]
+163 verbose parsed url { protocol: null,
+163 verbose parsed url   slashes: null,
+163 verbose parsed url   auth: null,
+163 verbose parsed url   host: null,
+163 verbose parsed url   port: null,
+163 verbose parsed url   hostname: null,
+163 verbose parsed url   hash: null,
+163 verbose parsed url   search: null,
+163 verbose parsed url   query: null,
+163 verbose parsed url   pathname: 'opn@^5.2.0',
+163 verbose parsed url   path: 'opn@^5.2.0',
+163 verbose parsed url   href: 'opn@^5.2.0' }
+164 verbose cache add name="opn" spec="^5.2.0" args=["opn","^5.2.0"]
+165 verbose parsed url { protocol: null,
+165 verbose parsed url   slashes: null,
+165 verbose parsed url   auth: null,
+165 verbose parsed url   host: null,
+165 verbose parsed url   port: null,
+165 verbose parsed url   hostname: null,
+165 verbose parsed url   hash: null,
+165 verbose parsed url   search: null,
+165 verbose parsed url   query: null,
+165 verbose parsed url   pathname: '^5.2.0',
+165 verbose parsed url   path: '^5.2.0',
+165 verbose parsed url   href: '^5.2.0' }
+166 verbose addNamed [ 'opn', '^5.2.0' ]
+167 verbose addNamed [ null, '>=5.2.0-0 <6.0.0-0' ]
+168 silly lockFile cc0a288b-opn-5-2-0 opn@^5.2.0
+169 verbose lock opn@^5.2.0 /users/rajat19/.npm/cc0a288b-opn-5-2-0.lock
+170 verbose cache add [ 'snazzy@^7.1.1', null ]
+171 verbose cache add name=undefined spec="snazzy@^7.1.1" args=["snazzy@^7.1.1",null]
+172 verbose parsed url { protocol: null,
+172 verbose parsed url   slashes: null,
+172 verbose parsed url   auth: null,
+172 verbose parsed url   host: null,
+172 verbose parsed url   port: null,
+172 verbose parsed url   hostname: null,
+172 verbose parsed url   hash: null,
+172 verbose parsed url   search: null,
+172 verbose parsed url   query: null,
+172 verbose parsed url   pathname: 'snazzy@^7.1.1',
+172 verbose parsed url   path: 'snazzy@^7.1.1',
+172 verbose parsed url   href: 'snazzy@^7.1.1' }
+173 verbose cache add name="snazzy" spec="^7.1.1" args=["snazzy","^7.1.1"]
+174 verbose parsed url { protocol: null,
+174 verbose parsed url   slashes: null,
+174 verbose parsed url   auth: null,
+174 verbose parsed url   host: null,
+174 verbose parsed url   port: null,
+174 verbose parsed url   hostname: null,
+174 verbose parsed url   hash: null,
+174 verbose parsed url   search: null,
+174 verbose parsed url   query: null,
+174 verbose parsed url   pathname: '^7.1.1',
+174 verbose parsed url   path: '^7.1.1',
+174 verbose parsed url   href: '^7.1.1' }
+175 verbose addNamed [ 'snazzy', '^7.1.1' ]
+176 verbose addNamed [ null, '>=7.1.1-0 <8.0.0-0' ]
+177 silly lockFile a9463638-snazzy-7-1-1 snazzy@^7.1.1
+178 verbose lock snazzy@^7.1.1 /users/rajat19/.npm/a9463638-snazzy-7-1-1.lock
+179 verbose cache add [ 'standard@^11.0.0', null ]
+180 verbose cache add name=undefined spec="standard@^11.0.0" args=["standard@^11.0.0",null]
+181 verbose parsed url { protocol: null,
+181 verbose parsed url   slashes: null,
+181 verbose parsed url   auth: null,
+181 verbose parsed url   host: null,
+181 verbose parsed url   port: null,
+181 verbose parsed url   hostname: null,
+181 verbose parsed url   hash: null,
+181 verbose parsed url   search: null,
+181 verbose parsed url   query: null,
+181 verbose parsed url   pathname: 'standard@^11.0.0',
+181 verbose parsed url   path: 'standard@^11.0.0',
+181 verbose parsed url   href: 'standard@^11.0.0' }
+182 verbose cache add name="standard" spec="^11.0.0" args=["standard","^11.0.0"]
+183 verbose parsed url { protocol: null,
+183 verbose parsed url   slashes: null,
+183 verbose parsed url   auth: null,
+183 verbose parsed url   host: null,
+183 verbose parsed url   port: null,
+183 verbose parsed url   hostname: null,
+183 verbose parsed url   hash: null,
+183 verbose parsed url   search: null,
+183 verbose parsed url   query: null,
+183 verbose parsed url   pathname: '^11.0.0',
+183 verbose parsed url   path: '^11.0.0',
+183 verbose parsed url   href: '^11.0.0' }
+184 verbose addNamed [ 'standard', '^11.0.0' ]
+185 verbose addNamed [ null, '>=11.0.0-0 <12.0.0-0' ]
+186 silly lockFile dffab41f-standard-11-0-0 standard@^11.0.0
+187 verbose lock standard@^11.0.0 /users/rajat19/.npm/dffab41f-standard-11-0-0.lock
+188 verbose cache add [ 'ws@^5.0.0', null ]
+189 verbose cache add name=undefined spec="ws@^5.0.0" args=["ws@^5.0.0",null]
+190 verbose parsed url { protocol: null,
+190 verbose parsed url   slashes: null,
+190 verbose parsed url   auth: null,
+190 verbose parsed url   host: null,
+190 verbose parsed url   port: null,
+190 verbose parsed url   hostname: null,
+190 verbose parsed url   hash: null,
+190 verbose parsed url   search: null,
+190 verbose parsed url   query: null,
+190 verbose parsed url   pathname: 'ws@^5.0.0',
+190 verbose parsed url   path: 'ws@^5.0.0',
+190 verbose parsed url   href: 'ws@^5.0.0' }
+191 verbose cache add name="ws" spec="^5.0.0" args=["ws","^5.0.0"]
+192 verbose parsed url { protocol: null,
+192 verbose parsed url   slashes: null,
+192 verbose parsed url   auth: null,
+192 verbose parsed url   host: null,
+192 verbose parsed url   port: null,
+192 verbose parsed url   hostname: null,
+192 verbose parsed url   hash: null,
+192 verbose parsed url   search: null,
+192 verbose parsed url   query: null,
+192 verbose parsed url   pathname: '^5.0.0',
+192 verbose parsed url   path: '^5.0.0',
+192 verbose parsed url   href: '^5.0.0' }
+193 verbose addNamed [ 'ws', '^5.0.0' ]
+194 verbose addNamed [ null, '>=5.0.0-0 <6.0.0-0' ]
+195 silly lockFile 17d76a44-ws-5-0-0 ws@^5.0.0
+196 verbose lock ws@^5.0.0 /users/rajat19/.npm/17d76a44-ws-5-0-0.lock
+197 silly addNameRange { name: 'browser-sync',
+197 silly addNameRange   range: '>=2.23.6-0 <3.0.0-0',
+197 silly addNameRange   hasData: false }
+198 verbose url raw http-proxy
+199 verbose url resolving [ 'https://registry.npmjs.org/', './http-proxy' ]
+200 verbose url resolved https://registry.npmjs.org/http-proxy
+201 info trying registry request attempt 1 at 19:50:01
+202 http GET https://registry.npmjs.org/http-proxy
+203 verbose url raw micromatch
+204 verbose url resolving [ 'https://registry.npmjs.org/', './micromatch' ]
+205 verbose url resolved https://registry.npmjs.org/micromatch
+206 info trying registry request attempt 1 at 19:50:01
+207 http GET https://registry.npmjs.org/micromatch
+208 silly addNameRange { name: 'chai', range: '>=4.1.2-0 <5.0.0-0', hasData: false }
+209 silly addNameRange { name: 'is-glob', range: '>=4.0.0-0 <5.0.0-0', hasData: false }
+210 silly addNameRange { name: 'connect', range: '>=3.6.6-0 <4.0.0-0', hasData: false }
+211 silly addNameRange { name: 'coveralls',
+211 silly addNameRange   range: '>=3.0.0-0 <4.0.0-0',
+211 silly addNameRange   hasData: false }
+212 silly addNameRange { name: 'express', range: '>=4.16.3-0 <5.0.0-0', hasData: false }
+213 silly addNameRange { name: 'husky', range: '>=0.14.3-0 <0.15.0-0', hasData: false }
+214 silly addNameRange { name: 'istanbul', range: '>=0.4.5-0 <0.5.0-0', hasData: false }
+215 verbose url raw commitlint/cli
+216 verbose url resolving [ 'https://registry.npmjs.org/', './commitlint/cli' ]
+217 verbose url resolved https://registry.npmjs.org/commitlint/cli
+218 info trying registry request attempt 1 at 19:50:01
+219 http GET https://registry.npmjs.org/commitlint/cli
+220 verbose url raw commitlint/config-conventional
+221 verbose url resolving [ 'https://registry.npmjs.org/',
+221 verbose url resolving   './commitlint/config-conventional' ]
+222 verbose url resolved https://registry.npmjs.org/commitlint/config-conventional
+223 info trying registry request attempt 1 at 19:50:01
+224 http GET https://registry.npmjs.org/commitlint/config-conventional
+225 silly addNameRange { name: 'istanbul-coveralls',
+225 silly addNameRange   range: '>=1.0.3-0 <2.0.0-0',
+225 silly addNameRange   hasData: false }
+226 silly addNameRange { name: 'mocha', range: '>=5.0.4-0 <6.0.0-0', hasData: false }
+227 verbose url raw browser-sync
+228 verbose url resolving [ 'https://registry.npmjs.org/', './browser-sync' ]
+229 verbose url resolved https://registry.npmjs.org/browser-sync
+230 info trying registry request attempt 1 at 19:50:01
+231 http GET https://registry.npmjs.org/browser-sync
+232 verbose url raw chai
+233 verbose url resolving [ 'https://registry.npmjs.org/', './chai' ]
+234 verbose url resolved https://registry.npmjs.org/chai
+235 info trying registry request attempt 1 at 19:50:01
+236 http GET https://registry.npmjs.org/chai
+237 verbose url raw is-glob
+238 verbose url resolving [ 'https://registry.npmjs.org/', './is-glob' ]
+239 verbose url resolved https://registry.npmjs.org/is-glob
+240 info trying registry request attempt 1 at 19:50:01
+241 http GET https://registry.npmjs.org/is-glob
+242 verbose url raw connect
+243 verbose url resolving [ 'https://registry.npmjs.org/', './connect' ]
+244 verbose url resolved https://registry.npmjs.org/connect
+245 info trying registry request attempt 1 at 19:50:01
+246 http GET https://registry.npmjs.org/connect
+247 verbose url raw coveralls
+248 verbose url resolving [ 'https://registry.npmjs.org/', './coveralls' ]
+249 verbose url resolved https://registry.npmjs.org/coveralls
+250 info trying registry request attempt 1 at 19:50:01
+251 http GET https://registry.npmjs.org/coveralls
+252 verbose url raw husky
+253 verbose url resolving [ 'https://registry.npmjs.org/', './husky' ]
+254 verbose url resolved https://registry.npmjs.org/husky
+255 info trying registry request attempt 1 at 19:50:01
+256 http GET https://registry.npmjs.org/husky
+257 verbose url raw istanbul
+258 verbose url resolving [ 'https://registry.npmjs.org/', './istanbul' ]
+259 verbose url resolved https://registry.npmjs.org/istanbul
+260 info trying registry request attempt 1 at 19:50:01
+261 http GET https://registry.npmjs.org/istanbul
+262 silly addNameRange { name: 'opn', range: '>=5.2.0-0 <6.0.0-0', hasData: false }
+263 silly addNameRange { name: 'snazzy', range: '>=7.1.1-0 <8.0.0-0', hasData: false }
+264 silly addNameRange { name: 'standard',
+264 silly addNameRange   range: '>=11.0.0-0 <12.0.0-0',
+264 silly addNameRange   hasData: false }
+265 silly addNameRange { name: 'ws', range: '>=5.0.0-0 <6.0.0-0', hasData: false }
+266 verbose url raw istanbul-coveralls
+267 verbose url resolving [ 'https://registry.npmjs.org/', './istanbul-coveralls' ]
+268 verbose url resolved https://registry.npmjs.org/istanbul-coveralls
+269 info trying registry request attempt 1 at 19:50:01
+270 http GET https://registry.npmjs.org/istanbul-coveralls
+271 verbose url raw mocha
+272 verbose url resolving [ 'https://registry.npmjs.org/', './mocha' ]
+273 verbose url resolved https://registry.npmjs.org/mocha
+274 info trying registry request attempt 1 at 19:50:01
+275 http GET https://registry.npmjs.org/mocha
+276 verbose url raw opn
+277 verbose url resolving [ 'https://registry.npmjs.org/', './opn' ]
+278 verbose url resolved https://registry.npmjs.org/opn
+279 info trying registry request attempt 1 at 19:50:02
+280 http GET https://registry.npmjs.org/opn
+281 verbose url raw mocha-lcov-reporter/1.3.0
+282 verbose url resolving [ 'https://registry.npmjs.org/', './mocha-lcov-reporter/1.3.0' ]
+283 verbose url resolved https://registry.npmjs.org/mocha-lcov-reporter/1.3.0
+284 info trying registry request attempt 1 at 19:50:02
+285 http GET https://registry.npmjs.org/mocha-lcov-reporter/1.3.0
+286 verbose url raw snazzy
+287 verbose url resolving [ 'https://registry.npmjs.org/', './snazzy' ]
+288 verbose url resolved https://registry.npmjs.org/snazzy
+289 info trying registry request attempt 1 at 19:50:02
+290 http GET https://registry.npmjs.org/snazzy
+291 verbose url raw standard
+292 verbose url resolving [ 'https://registry.npmjs.org/', './standard' ]
+293 verbose url resolved https://registry.npmjs.org/standard
+294 info trying registry request attempt 1 at 19:50:02
+295 http GET https://registry.npmjs.org/standard
+296 verbose url raw ws
+297 verbose url resolving [ 'https://registry.npmjs.org/', './ws' ]
+298 verbose url resolved https://registry.npmjs.org/ws
+299 info trying registry request attempt 1 at 19:50:02
+300 http GET https://registry.npmjs.org/ws
+301 verbose url raw lodash
+302 verbose url resolving [ 'https://registry.npmjs.org/', './lodash' ]
+303 verbose url resolved https://registry.npmjs.org/lodash
+304 info trying registry request attempt 1 at 19:50:02
+305 verbose etag "5ab21e99-2b6a4"
+306 http GET https://registry.npmjs.org/lodash
+307 verbose url raw express
+308 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+309 verbose url resolved https://registry.npmjs.org/express
+310 info trying registry request attempt 1 at 19:50:02
+311 verbose etag "5ab21ea0-94efb"
+312 http GET https://registry.npmjs.org/express
+313 http 200 https://registry.npmjs.org/http-proxy
+314 silly registry.get cb [ 200,
+314 silly registry.get   { 'content-type': 'application/json; charset=UTF-8',
+314 silly registry.get     server: 'UploadServer',
+314 silly registry.get     'cache-control': 'max-age=300',
+314 silly registry.get     'last-modified': 'Wed, 21 Mar 2018 3:31:20 GMT',
+314 silly registry.get     etag: '"5ab1d208-24048"',
+314 silly registry.get     'x-npm-region': 'US-West',
+314 silly registry.get     'content-length': '147528',
+314 silly registry.get     'accept-ranges': 'bytes',
+314 silly registry.get     date: 'Thu, 22 Mar 2018 01:50:02 GMT',
+314 silly registry.get     via: '1.1 varnish',
+314 silly registry.get     age: '1199',
+314 silly registry.get     connection: 'keep-alive',
+314 silly registry.get     'x-served-by': 'cache-sjc3144-SJC',
+314 silly registry.get     'x-cache': 'HIT',
+314 silly registry.get     'x-cache-hits': '1',
+314 silly registry.get     'x-timer': 'S1521683402.119083,VS0,VE3',
+314 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+315 http 200 https://registry.npmjs.org/micromatch
+316 silly registry.get cb [ 200,
+316 silly registry.get   { 'content-type': 'application/json; charset=UTF-8',
+316 silly registry.get     server: 'UploadServer',
+316 silly registry.get     'cache-control': 'max-age=300',
+316 silly registry.get     'last-modified': 'Tue, 6 Mar 2018 9:39:44 GMT',
+316 silly registry.get     etag: '"5a9e61e0-2d0c9"',
+316 silly registry.get     'x-npm-region': 'US-West',
+316 silly registry.get     'content-length': '184521',
+316 silly registry.get     'accept-ranges': 'bytes',
+316 silly registry.get     date: 'Thu, 22 Mar 2018 01:50:02 GMT',
+316 silly registry.get     via: '1.1 varnish',
+316 silly registry.get     age: '9444',
+316 silly registry.get     connection: 'keep-alive',
+316 silly registry.get     'x-served-by': 'cache-sjc3642-SJC',
+316 silly registry.get     'x-cache': 'HIT',
+316 silly registry.get     'x-cache-hits': '1',
+316 silly registry.get     'x-timer': 'S1521683402.117513,VS0,VE1',
+316 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+317 silly addNameRange number 2 { name: 'http-proxy',
+317 silly addNameRange   range: '>=1.16.2-0 <2.0.0-0',
+317 silly addNameRange   hasData: true }
+318 silly addNameRange versions [ 'http-proxy',
+318 silly addNameRange   [ '0.5.9',
+318 silly addNameRange     '0.5.10',
+318 silly addNameRange     '0.5.11',
+318 silly addNameRange     '0.6.0',
+318 silly addNameRange     '0.6.1',
+318 silly addNameRange     '0.6.2',
+318 silly addNameRange     '0.6.4',
+318 silly addNameRange     '0.6.5',
+318 silly addNameRange     '0.6.6',
+318 silly addNameRange     '0.7.0',
+318 silly addNameRange     '0.7.2',
+318 silly addNameRange     '0.7.3',
+318 silly addNameRange     '0.7.4',
+318 silly addNameRange     '0.7.5',
+318 silly addNameRange     '0.7.6',
+318 silly addNameRange     '0.8.0',
+318 silly addNameRange     '0.8.1',
+318 silly addNameRange     '0.8.2',
+318 silly addNameRange     '0.8.3',
+318 silly addNameRange     '0.8.4',
+318 silly addNameRange     '0.8.5',
+318 silly addNameRange     '0.8.6',
+318 silly addNameRange     '0.8.7',
+318 silly addNameRange     '0.9.0',
+318 silly addNameRange     '0.9.1',
+318 silly addNameRange     '0.10.0',
+318 silly addNameRange     '0.10.1',
+318 silly addNameRange     '0.10.2',
+318 silly addNameRange     '0.10.3',
+318 silly addNameRange     '0.10.4',
+318 silly addNameRange     '1.0.0',
+318 silly addNameRange     '1.0.1',
+318 silly addNameRange     '1.0.2',
+318 silly addNameRange     '1.0.3',
+318 silly addNameRange     '1.1.0',
+318 silly addNameRange     '1.1.1',
+318 silly addNameRange     '1.1.2',
+318 silly addNameRange     '1.1.3',
+318 silly addNameRange     '1.1.4',
+318 silly addNameRange     '1.1.5',
+318 silly addNameRange     '1.1.6',
+318 silly addNameRange     '1.2.0',
+318 silly addNameRange     '1.2.1',
+318 silly addNameRange     '1.3.0',
+318 silly addNameRange     '1.4.0',
+318 silly addNameRange     '1.4.1',
+318 silly addNameRange     '1.4.2',
+318 silly addNameRange     '1.4.3',
+318 silly addNameRange     '1.5.0',
+318 silly addNameRange     '1.5.1',
+318 silly addNameRange     '1.5.2',
+318 silly addNameRange     '1.5.3',
+318 silly addNameRange     '1.6.0',
+318 silly addNameRange     '1.6.1',
+318 silly addNameRange     '1.6.2',
+318 silly addNameRange     '1.7.0',
+318 silly addNameRange     '1.7.1',
+318 silly addNameRange     '1.7.2',
+318 silly addNameRange     '1.7.3',
+318 silly addNameRange     '1.8.0',
+318 silly addNameRange     '1.8.1',
+318 silly addNameRange     '1.9.0',
+318 silly addNameRange     '1.9.1',
+318 silly addNameRange     '1.10.0',
+318 silly addNameRange     '1.10.1',
+318 silly addNameRange     '1.11.0',
+318 silly addNameRange     '1.11.1',
+318 silly addNameRange     '1.11.2',
+318 silly addNameRange     '1.11.3',
+318 silly addNameRange     '1.12.0',
+318 silly addNameRange     '1.12.1',
+318 silly addNameRange     '1.13.0',
+318 silly addNameRange     '1.13.1',
+318 silly addNameRange     '1.13.2',
+318 silly addNameRange     '1.13.3',
+318 silly addNameRange     '1.14.0',
+318 silly addNameRange     '1.15.0',
+318 silly addNameRange     '1.15.1',
+318 silly addNameRange     '1.15.2',
+318 silly addNameRange     '1.16.0',
+318 silly addNameRange     '1.16.1',
+318 silly addNameRange     '1.16.2' ] ]
+319 verbose addNamed [ 'http-proxy', '1.16.2' ]
+320 verbose addNamed [ '1.16.2', '1.16.2' ]
+321 silly lockFile 478f9d1d-http-proxy-1-16-2 http-proxy@1.16.2
+322 verbose lock http-proxy@1.16.2 /users/rajat19/.npm/478f9d1d-http-proxy-1-16-2.lock
+323 silly addNameRange number 2 { name: 'micromatch',
+323 silly addNameRange   range: '>=3.1.9-0 <4.0.0-0',
+323 silly addNameRange   hasData: true }
+324 silly addNameRange versions [ 'micromatch',
+324 silly addNameRange   [ '0.1.0',
+324 silly addNameRange     '0.2.0',
+324 silly addNameRange     '0.2.1',
+324 silly addNameRange     '0.2.2',
+324 silly addNameRange     '1.0.0',
+324 silly addNameRange     '1.0.1',
+324 silly addNameRange     '1.2.0',
+324 silly addNameRange     '1.2.2',
+324 silly addNameRange     '1.3.0',
+324 silly addNameRange     '1.3.1',
+324 silly addNameRange     '1.3.2',
+324 silly addNameRange     '1.3.3',
+324 silly addNameRange     '1.4.0',
+324 silly addNameRange     '1.4.1',
+324 silly addNameRange     '1.4.2',
+324 silly addNameRange     '1.4.3',
+324 silly addNameRange     '1.4.4',
+324 silly addNameRange     '1.4.5',
+324 silly addNameRange     '1.5.0',
+324 silly addNameRange     '1.6.0',
+324 silly addNameRange     '1.6.1',
+324 silly addNameRange     '1.6.2',
+324 silly addNameRange     '2.0.0',
+324 silly addNameRange     '2.1.0',
+324 silly addNameRange     '2.1.1',
+324 silly addNameRange     '2.1.2',
+324 silly addNameRange     '2.1.3',
+324 silly addNameRange     '2.1.4',
+324 silly addNameRange     '2.1.5',
+324 silly addNameRange     '2.1.6',
+324 silly addNameRange     '2.2.0',
+324 silly addNameRange     '2.3.0',
+324 silly addNameRange     '2.3.1',
+324 silly addNameRange     '2.3.2',
+324 silly addNameRange     '2.3.3',
+324 silly addNameRange     '2.3.4',
+324 silly addNameRange     '2.3.5',
+324 silly addNameRange     '2.3.6',
+324 silly addNameRange     '2.3.7',
+324 silly addNameRange     '2.3.8',
+324 silly addNameRange     '2.3.9',
+324 silly addNameRange     '2.3.10',
+324 silly addNameRange     '2.3.11',
+324 silly addNameRange     '3.0.0',
+324 silly addNameRange     '3.0.1',
+324 silly addNameRange     '3.0.2',
+324 silly addNameRange     '3.0.3',
+324 silly addNameRange     '3.0.4',
+324 silly addNameRange     '3.0.5',
+324 silly addNameRange     '3.1.0',
+324 silly addNameRange     '3.1.1',
+324 silly addNameRange     '3.1.2',
+324 silly addNameRange     '3.1.3',
+324 silly addNameRange     '3.1.4',
+324 silly addNameRange     '3.1.5',
+324 silly addNameRange     '3.1.6',
+324 silly addNameRange     '3.1.7',
+324 silly addNameRange     '3.1.8',
+324 silly addNameRange     '3.1.9' ] ]
+325 verbose addNamed [ 'micromatch', '3.1.9' ]
+326 verbose addNamed [ '3.1.9', '3.1.9' ]
+327 silly lockFile 6fe07483-micromatch-3-1-9 micromatch@3.1.9
+328 verbose lock micromatch@3.1.9 /users/rajat19/.npm/6fe07483-micromatch-3-1-9.lock
+329 http 200 https://registry.npmjs.org/is-glob
+330 silly registry.get cb [ 200,
+330 silly registry.get   { 'content-type': 'application/json; charset=UTF-8',
+330 silly registry.get     server: 'UploadServer',
+330 silly registry.get     'cache-control': 'max-age=300',
+330 silly registry.get     'last-modified': 'Mon, 2 Oct 2017 17:35:26 GMT',
+330 silly registry.get     etag: '"59d278de-6a6f"',
+330 silly registry.get     'x-npm-region': 'US-West',
+330 silly registry.get     'content-length': '27247',
+330 silly registry.get     'accept-ranges': 'bytes',
+330 silly registry.get     date: 'Thu, 22 Mar 2018 01:50:02 GMT',
+330 silly registry.get     via: '1.1 varnish',
+330 silly registry.get     age: '9444',
+330 silly registry.get     connection: 'keep-alive',
+330 silly registry.get     'x-served-by': 'cache-sjc3642-SJC',
+330 silly registry.get     'x-cache': 'HIT',
+330 silly registry.get     'x-cache-hits': '1',
+330 silly registry.get     'x-timer': 'S1521683402.319083,VS0,VE1',
+330 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+331 silly lockFile db8081de-http-proxy-http-proxy-1-16-2-tgz https://registry.npmjs.org/http-proxy/-/http-proxy-1.16.2.tgz
+332 verbose lock https://registry.npmjs.org/http-proxy/-/http-proxy-1.16.2.tgz /users/rajat19/.npm/db8081de-http-proxy-http-proxy-1-16-2-tgz.lock
+333 silly lockFile 89ef643a--micromatch-micromatch-3-1-9-tgz https://registry.npmjs.org/micromatch/-/micromatch-3.1.9.tgz
+334 verbose lock https://registry.npmjs.org/micromatch/-/micromatch-3.1.9.tgz /users/rajat19/.npm/89ef643a--micromatch-micromatch-3-1-9-tgz.lock
+335 verbose addRemoteTarball [ 'https://registry.npmjs.org/http-proxy/-/http-proxy-1.16.2.tgz',
+335 verbose addRemoteTarball   '06dff292952bf64dbe8471fa9df73066d4f37742' ]
+336 verbose addRemoteTarball [ 'https://registry.npmjs.org/micromatch/-/micromatch-3.1.9.tgz',
+336 verbose addRemoteTarball   '15dc93175ae39e52e93087847096effc73efcf89' ]
+337 info retry fetch attempt 1 at 19:50:02
+338 verbose fetch to= /users/rajat19/tmp/npm-78984-Q2cetrWp/1521683402370-0.25599487079307437/tmp.tgz
+339 info retry fetch attempt 1 at 19:50:02
+340 verbose fetch to= /users/rajat19/tmp/npm-78984-Q2cetrWp/1521683402371-0.3998955679126084/tmp.tgz
+341 silly addNameRange number 2 { name: 'is-glob', range: '>=4.0.0-0 <5.0.0-0', hasData: true }
+342 silly addNameRange versions [ 'is-glob',
+342 silly addNameRange   [ '0.1.0',
+342 silly addNameRange     '0.2.0',
+342 silly addNameRange     '0.3.0',
+342 silly addNameRange     '1.0.0',
+342 silly addNameRange     '1.1.0',
+342 silly addNameRange     '1.1.1',
+342 silly addNameRange     '1.1.2',
+342 silly addNameRange     '1.1.3',
+342 silly addNameRange     '2.0.0',
+342 silly addNameRange     '2.0.1',
+342 silly addNameRange     '3.0.0',
+342 silly addNameRange     '3.1.0',
+342 silly addNameRange     '4.0.0' ] ]
+343 verbose addNamed [ 'is-glob', '4.0.0' ]
+344 verbose addNamed [ '4.0.0', '4.0.0' ]
+345 silly lockFile 72d5252e-is-glob-4-0-0 is-glob@4.0.0
+346 verbose lock is-glob@4.0.0 /users/rajat19/.npm/72d5252e-is-glob-4-0-0.lock
+347 http GET https://registry.npmjs.org/http-proxy/-/http-proxy-1.16.2.tgz
+348 http GET https://registry.npmjs.org/micromatch/-/micromatch-3.1.9.tgz
+349 silly lockFile fbbd91be-js-org-is-glob-is-glob-4-0-0-tgz https://registry.npmjs.org/is-glob/-/is-glob-4.0.0.tgz
+350 verbose lock https://registry.npmjs.org/is-glob/-/is-glob-4.0.0.tgz /users/rajat19/.npm/fbbd91be-js-org-is-glob-is-glob-4-0-0-tgz.lock
+351 verbose addRemoteTarball [ 'https://registry.npmjs.org/is-glob/-/is-glob-4.0.0.tgz',
+351 verbose addRemoteTarball   '9521c76845cc2610a85203ddf080a958c2ffabc0' ]
+352 info retry fetch attempt 1 at 19:50:02
+353 verbose fetch to= /users/rajat19/tmp/npm-78984-Q2cetrWp/1521683402387-0.7489639872219414/tmp.tgz
+354 http GET https://registry.npmjs.org/is-glob/-/is-glob-4.0.0.tgz
+355 http 404 https://registry.npmjs.org/commitlint/config-conventional
+356 silly registry.get cb [ 404,
+356 silly registry.get   { 'content-type': 'application/json',
+356 silly registry.get     'cache-control': 'max-age=0',
+356 silly registry.get     'content-length': '2',
+356 silly registry.get     'accept-ranges': 'bytes',
+356 silly registry.get     date: 'Thu, 22 Mar 2018 01:50:02 GMT',
+356 silly registry.get     via: '1.1 varnish',
+356 silly registry.get     age: '0',
+356 silly registry.get     connection: 'keep-alive',
+356 silly registry.get     'x-served-by': 'cache-sjc3650-SJC',
+356 silly registry.get     'x-cache': 'MISS',
+356 silly registry.get     'x-cache-hits': '0',
+356 silly registry.get     'x-timer': 'S1521683402.123441,VS0,VE321',
+356 silly registry.get     vary: 'Accept-Encoding' } ]
+357 silly addNameRange number 2 { name: 'commitlint/config-conventional',
+357 silly addNameRange   range: '>=6.1.3-0 <7.0.0-0',
+357 silly addNameRange   hasData: true }
+358 silly addNameRange versions [ undefined, [] ]
+359 error TypeError: Cannot read property 'latest' of undefined
+359 error     at next (/usr/share/npm/lib/cache.js:687:35)
+359 error     at /usr/share/npm/lib/cache.js:675:5
+359 error     at saved (/usr/share/npm/node_modules/npm-registry-client/lib/get.js:142:7)
+359 error     at /usr/lib/nodejs/graceful-fs/polyfills.js:133:7
+359 error     at Object.oncomplete (fs.js:107:15)
+360 error If you need help, you may report this log at:
+360 error     <http://github.com/isaacs/npm/issues>
+360 error or email it to:
+360 error     <npm-@googlegroups.com>
+361 error System Linux 3.13.0-117-generic
+362 error command "/usr/bin/nodejs" "/usr/bin/npm" "install"
+363 error cwd /mnt/http-proxy-middleware
+364 error node -v v0.10.25
+365 error npm -v 1.3.10
+366 error type non_object_property_load
+367 verbose exit [ 1, true ]
